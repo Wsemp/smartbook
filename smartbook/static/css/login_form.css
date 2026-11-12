@@ -1,0 +1,16 @@
+*, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f1f5f9; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; margin: 0; }
+    .page-card { background: #fff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 24px rgba(0,0,0,.08); width: 100%; max-width: 600px; }
+    .gen-form{max-width:560px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1f2937}
+    .gen-form__title{font-size:1.4rem;font-weight:800;margin:0 0 24px;color:#111827;letter-spacing:-.03em}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:600px){.form-row{grid-template-columns:1fr}}
+    .form-group{display:flex;flex-direction:column;gap:5px;margin-bottom:18px}
+    .form-group label{font-size:.875rem;font-weight:600;color:#374151}
+    .form-required{color:#ef4444;margin-left:2px}
+    .form-input{border:1.5px solid #d1d5db;border-radius:7px;padding:9px 13px;font-size:.9rem;color:#1f2937;outline:none;transition:border-color .15s,box-shadow .15s;width:100%;font-family:inherit;background:#fff}
+    .form-input:focus{border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,.12)}
+    .form-check{display:flex;align-items:center;gap:8px;font-size:.875rem;color:#374151;cursor:pointer;margin-bottom:6px}
+    .form-hint{font-size:.775rem;color:#9ca3af;margin-top:2px}
+    .form-submit{padding:10px 28px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;transition:background .15s}
+    .form-submit:hover{background:#2563eb}

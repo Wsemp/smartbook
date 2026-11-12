@@ -1,0 +1,13 @@
+.fraction-background {
+    min-height: calc(100vh - 84px);
+
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

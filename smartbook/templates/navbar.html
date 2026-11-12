@@ -1,0 +1,30 @@
+{% load static %}
+
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="#">
+            <img src="{% static 'images/Smartbook.png' %}" alt="Smartbook logo">
+        </a>
+    </div>
+
+    <ul class="navbar-links">
+        <li><a href="/">Strona główna</a></li>
+        <li><a href="/">Tablica wyników</a></li>
+        <li><a href="/">Punkty</a></li>
+        <li><a href="/">Twoje ostatnie zapytania</a></li>
+    </ul>
+
+    {% if user.is_authenticated %}
+    <div>
+        <form method="POST" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Wyloguj</button>
+        </form>
+    </div>
+    {% else %}
+    <div>
+        <a href="/login/">Zaloguj się</a>
+    </div>
+    {% endif %}
+</nav>
+
