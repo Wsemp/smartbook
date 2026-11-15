@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'login',
     'dashboard',
     'database.apps.DatabaseConfig',
+    'exams.lvl1',
 ]
 
 AUTH_USER_MODEL = 'database.User'
