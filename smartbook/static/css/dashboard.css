@@ -1,13 +1,44 @@
 .fraction-background {
-    min-height: calc(100vh - 84px);
-
     background-image: url("../images/bg.png");
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center top;
     background-repeat: no-repeat;
+
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    width: 18rem;
+    height: 20rem;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }

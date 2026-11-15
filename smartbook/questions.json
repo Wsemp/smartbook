@@ -1,0 +1,54 @@
+[
+  {
+    "level_id": 1,
+    "question": "Ile wynosi 2/7 + 3/7?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Dodajemy liczniki, ponieważ mianowniki są jednakowe.",
+    "answers": [
+      {
+        "answer_text": "5/7",
+        "is_correct": true
+      },
+      {
+        "answer_text": "5/14",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "6/7",
+        "is_correct": false,
+        "error_type": "wrong_numerator"
+      },
+      {
+        "answer_text": "1/7",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi 6/9 - 2/9?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Odejmujemy liczniki, pozostawiając ten sam mianownik.",
+    "answers": [
+      {
+        "answer_text": "4/9",
+        "is_correct": true
+      },
+      {
+        "answer_text": "8/9",
+        "is_correct": false
+      },
+      {
+        "answer_text": "4/18",
+        "is_correct": false
+      },
+      {
+        "answer_text": "2/9",
+        "is_correct": false
+      }
+    ]
+  }
+]

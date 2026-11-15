@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
     Dashboard
@@ -7,6 +8,15 @@
 {% block content %}
         <main class="fraction-background">
             <h1>Działania na ułamkach</h1>
-            <p>Rozwijaj swoje umiejętności matematyczne!</p>
         </main>
+            <div class="section">
+                {% for level in levels %}
+                <div class="card">
+                    <h5 class="card-title"> {{ level.level_name }}</h5>
+                  <img class="card-img-top" src="{% static 'images/cards/lvl' %}{{ level.id }}.png" alt="Card image cap">
+                </div>
+                {% empty %}
+                    <p>Brak dostępnych leveli.</p>
+                {% endfor %}
+            </div>
 {% endblock %}
