@@ -1,52 +1,262 @@
+
 [
   {
     "level_id": 1,
-    "question": "Ile wynosi 2/7 + 3/7?",
+    "question": "Ile wynosi \\(\\frac{3}{8} + \\frac{2}{8}\\)?",
     "difficulty": 1,
     "points": 1,
-    "explanation": "Dodajemy liczniki, ponieważ mianowniki są jednakowe.",
+    "explanation": "Dodajemy liczniki, ponieważ mianowniki są jednakowe. Mianownik pozostaje bez zmian.",
     "answers": [
       {
-        "answer_text": "5/7",
+        "answer_text": "\\(\\frac{5}{8}\\)",
         "is_correct": true
       },
       {
-        "answer_text": "5/14",
+        "answer_text": "\\(\\frac{5}{16}\\)",
         "is_correct": false,
         "error_type": "wrong_denominator"
       },
       {
-        "answer_text": "6/7",
+        "answer_text": "\\(\\frac{6}{8}\\)",
         "is_correct": false,
         "error_type": "wrong_numerator"
       },
       {
-        "answer_text": "1/7",
+        "answer_text": "\\(\\frac{1}{8}\\)",
         "is_correct": false
       }
     ]
   },
   {
     "level_id": 1,
-    "question": "Ile wynosi 6/9 - 2/9?",
+    "question": "Ile wynosi \\(\\frac{7}{10} - \\frac{3}{10}\\)?",
     "difficulty": 1,
     "points": 1,
     "explanation": "Odejmujemy liczniki, pozostawiając ten sam mianownik.",
     "answers": [
       {
-        "answer_text": "4/9",
+        "answer_text": "\\(\\frac{4}{10}\\)",
         "is_correct": true
       },
       {
-        "answer_text": "8/9",
+        "answer_text": "\\(\\frac{4}{20}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{10}{10}\\)",
         "is_correct": false
       },
       {
-        "answer_text": "4/18",
+        "answer_text": "\\(\\frac{3}{10}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{1}{6} + \\frac{4}{6}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Dodajemy liczniki ułamków o jednakowych mianownikach.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{5}{6}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{5}{12}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{4}{6}\\)",
         "is_correct": false
       },
       {
-        "answer_text": "2/9",
+        "answer_text": "\\(\\frac{6}{6}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{8}{11} - \\frac{5}{11}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Odejmujemy licznik od licznika, a mianownik pozostawiamy bez zmian.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{3}{11}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{3}{22}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{13}{11}\\)",
+        "is_correct": false
+      },
+      {
+        "answer_text": "\\(\\frac{5}{11}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{2}{9} + \\frac{5}{9}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Przy dodawaniu ułamków o jednakowych mianownikach dodajemy tylko liczniki.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{7}{9}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{7}{18}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{10}{9}\\)",
+        "is_correct": false
+      },
+      {
+        "answer_text": "\\(\\frac{3}{9}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{9}{12} - \\frac{4}{12}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Odejmujemy liczniki, a mianownik pozostaje taki sam.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{5}{12}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{5}{24}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{13}{12}\\)",
+        "is_correct": false
+      },
+      {
+        "answer_text": "\\(\\frac{4}{12}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{3}{5} + \\frac{1}{5}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Dodajemy liczniki: 3 + 1 = 4. Mianownik pozostaje równy 5.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{4}{5}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{4}{10}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{3}{5}\\)",
+        "is_correct": false
+      },
+      {
+        "answer_text": "\\(\\frac{5}{5}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{10}{13} - \\frac{6}{13}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Odejmujemy liczniki: 10 - 6 = 4. Mianownik pozostaje równy 13.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{4}{13}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{4}{26}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{16}{13}\\)",
+        "is_correct": false
+      },
+      {
+        "answer_text": "\\(\\frac{6}{13}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{4}{7} + \\frac{2}{7}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Dodajemy liczniki, pozostawiając wspólny mianownik bez zmian.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{6}{7}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{6}{14}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{8}{7}\\)",
+        "is_correct": false
+      },
+      {
+        "answer_text": "\\(\\frac{2}{7}\\)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "level_id": 1,
+    "question": "Ile wynosi \\(\\frac{11}{15} - \\frac{7}{15}\\)?",
+    "difficulty": 1,
+    "points": 1,
+    "explanation": "Odejmujemy liczniki, pozostawiając mianownik bez zmian.",
+    "answers": [
+      {
+        "answer_text": "\\(\\frac{4}{15}\\)",
+        "is_correct": true
+      },
+      {
+        "answer_text": "\\(\\frac{4}{30}\\)",
+        "is_correct": false,
+        "error_type": "wrong_denominator"
+      },
+      {
+        "answer_text": "\\(\\frac{18}{15}\\)",
+        "is_correct": false
+      },
+      {
+        "answer_text": "\\(\\frac{7}{15}\\)",
         "is_correct": false
       }
     ]

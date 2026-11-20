@@ -2,9 +2,105 @@
 {% load static %}
 
 {% block title %}
-    Dashboard
+    {{ level.level_name }}
 {% endblock %}
 
 {% block content %}
- <h1>Strona testowa</h1>
+
+<div class="quiz-container">
+
+    {% if question %}
+
+        <div class="quiz-card">
+
+            <!-- Nagłówek quizu -->
+            <div class="quiz-header">
+                <span>Twoja lekcja</span>
+                <span>
+                    Pytanie {{ page_obj.number }}
+                    z {{ page_obj.paginator.count }}
+                </span>
+            </div>
+
+            <!-- Pasek postępu -->
+            <div class="progress">
+                <progress
+                    value="{{ page_obj.number }}"
+                    max="{{ page_obj.paginator.count }}">
+                </progress>
+            </div>
+
+            <h2>Rozwiąż zadanie</h2>
+            <p class="quiz-description">
+                Wybierz jedną poprawną odpowiedź.
+            </p>
+
+            <!-- Treść pytania -->
+            <div class="question-box">
+                {{ question.question }}
+            </div>
+
+            <!-- Odpowiedzi -->
+            <h3 class="answers-heading">
+                Wybierz odpowiedź:
+            </h3>
+
+            <div class="answers">
+
+                {% for answer in question.answers.all %}
+
+                    <label class="answer-option">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="{{ answer.id }}"
+                        >
+
+                        <span class="answer-text">
+                            {{ answer.answer_text }}
+                        </span>
+
+                    </label>
+
+                {% endfor %}
+
+            </div>
+
+            <!-- Nawigacja -->
+            <div class="navigation">
+
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}"
+                       class="previous-button">
+                        Poprzednie
+                    </a>
+                {% endif %}
+
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}"
+                       class="quiz-button">
+                        Następne pytanie
+                    </a>
+                {% else %}
+                    <button type="button" class="quiz-button">
+                        Zakończ test
+                    </button>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    {% else %}
+
+        <div class="quiz-card empty-quiz">
+            <h2>Brak pytań</h2>
+            <p>W tym teście nie ma jeszcze dostępnych pytań.</p>
+        </div>
+
+    {% endif %}
+
+</div>
+
 {% endblock %}

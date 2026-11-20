@@ -21,7 +21,7 @@ class CustomUserAdmin(UserAdmin):
 
 @admin.register(Level)
 class LevelAdmin(admin.ModelAdmin):
-    list_display = ('id', 'level_name', 'required_points')
+    list_display = ('id', 'level_name', 'required_points', 'url_path')
     search_fields = ('level_name',)
     ordering = ('id',)
 

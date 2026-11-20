@@ -35,6 +35,8 @@ class Level(models.Model):
 
     required_points = models.PositiveIntegerField()
 
+    url_path = models.SlugField(max_length=256)
+
     class Meta:
         db_table = 'levels'
 
